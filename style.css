@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    padding: 0px 40px 0px 75px;
+    background-color: silver;
+}
+nav .logo h1{
+    font-size: 35px;
+    text-transform: capitalize;
+    color: #fff;
+}
+nav ul input{
+    height: 33px;
+    width: 18rem;
+    font-size: 15px;
+    padding: 0px 10px;
+    border: none;
+    outline: none;
+}
+nav ul button{
+    width: 5rem;
+    height: 33px;
+    font-size: 15px;
+    border: 1px solid #fff;
+    color: #fff;
+    background: none;
+    text-transform: capitalize;
+}
+.container{
+    /* background-color: turquoise; */
+    width: 80%;
+    margin: auto;
+    
+}
+.container h1{
+    text-transform: capitalize;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 43px;
+    font-weight: 900;
+    color: transparent;
+    /* -webkit-text-stroke: 0.2px #fff; */
+    background:linear-gradient(180deg,rgb(255, 125, 125),rgb(131, 210, 255));
+    -webkit-background-clip: text;
+}
+
+
+.container p1{
+   
+    font-size: 23px;
+    text-transform: capitalize;
+}
+ul textarea{
+    width: 100%;
+    outline: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    border: 1px solid #ababab;
+    margin: 10px 0px;
+    
+}
+#addTitle{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid #ababab;
+    margin: 10PX 0PX;
+}
+ul button{
+    width: 150px;
+    height: 50px;
+    margin: 5px 0px;
+    text-transform: capitalize;
+    font-size: 18px;
+    border: none;
+    /* background:linear-gradient(140deg,rgb(255, 125, 125),rgb(131, 210, 255)); */
+    background-color: rgb(255, 100, 100);
+    color: #fff;
+    border-radius: 5px;
+    
+
+}
+.cards{
+    width: 80%;
+    margin: auto;
+}
+.cards h2{
+    text-transform: capitalize;
+    text-align: center;
+    margin: 5px 0px;
+    font-size: 43px;
+    font-weight: 900;
+    color: transparent;
+    /* -webkit-text-stroke: 0.2px #fff; */
+    background:linear-gradient(180deg,rgb(255, 125, 125),rgb(131, 210, 255));
+    -webkit-background-clip: text;
+}
+.card-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card_no{
+    /* background-color: tomato; */
+    width: 18rem;
+    height: auto;
+    margin: 10px 10px;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+.card-info{
+    padding: 10px;
+}
+.card-info h3{
+    font-size: 25px;
+    margin: 10px 0px;
+}
+.card-info p{
+    font-size: 17px;
+    margin: 5px 0px;
+}
+.card-info button{
+    width: 100px;
+    height: 35px;
+    margin: 5px 5px;
+    text-transform: capitalize;
+    font-size: 15px;
+    border: none;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: rgb(255, 100, 100);
+    color: #fff;
+
+}
+
+.card-info .book{
+    background-color: rgb(255, 100, 100);
+    color: #ffe;
+}
+.fas{
+    font-size: 25px;
+    color: #fff;
+    
+    
+}
+#click:checked ~ ul{
+    top: 50px;
+}
+#click:checked ~ .menu-btn i::before{
+    content: "\f00d";
+    
+}
+#click{
+    display: none;
+}
+.menu-btn{
+    display: none;
+}
+
+@media screen and (max-width:750px) {
+    nav{
+        height: 50px;
+        padding: 0px 15px;
+        
+    }
+
+    nav ul{
+        position: fixed;
+        top: -100px;
+        left: 0;    
+        width: 100%;
+        height: 70px;
+        background-color: silver;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ;
+    }
+    nav ul input{
+        width: auto;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .container h1{
+        font-size: 30px;
+    }
+    .container p1{
+        font-size: 20px;
+    }
+    form button{
+        width: 100px;
+        height: 40px;
+        margin: 5px 0px;
+        text-transform: capitalize;
+        font-size: 15px;
+        border: none;
+        /* background:linear-gradient(140deg,rgb(255, 125, 125),rgb(131, 210, 255)); */
+        background-color: rgb(255, 100, 100);
+        color: #fff;
+        border-radius: 5px;
+        
+    
+    }
+    .cards h2{
+        font-size: 30px;
+        margin: 20px 0px;
+    }
+    .cards button{
+        position: relative;
+        left: 25%;
+        
+    }
+}
